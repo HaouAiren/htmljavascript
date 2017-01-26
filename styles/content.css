@@ -1,0 +1,25 @@
+.article{
+  width: 80%;
+  margin: auto;
+
+}
+h1.header{
+  margin: 1px;
+  color: grey;
+}
+.article_body{
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.article_introduction{
+  font-weight: bold;
+}
+
+img{
+  float: left;
+}
+
+#no_float{
+  clear: left;
+}
