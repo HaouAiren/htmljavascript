@@ -1,18 +1,32 @@
-.article{
-  width: 80%;
+.topic{
+  width: 90%;
   margin: auto;
-
 }
-h1.header{
+
+.topic_title{
   margin: 1px;
   color: grey;
 }
-.article_body{
-  border: 1px solid grey;
+.topic_introduction{
+  font-weight: bold;
+}
+.topic_subtitle{
+  margin: 3px;
+  margin-top: 12px;
+}
+.topic_body{
+  border: 1px solid #9A9A9A;
   padding: 1em;
 }
+.topic_sub{
+  font-style: italic;
+  float: right;
+  width: 300px;
+  text-align: right;
+}
 
-.article_introduction{
+.date{
+  padding-left: 10%;
   font-weight: bold;
 }
 
@@ -20,6 +34,28 @@ img{
   float: left;
 }
 
-#no_float{
+.no_float{
   clear: left;
 }
+
+table {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 5px;
+  border: 1px solid #DDD;
+  text-align: left;
+ }
+
+ td.section{
+   text-align: right;
+   font-weight: bold;
+   vertical-align: top;
+ }
+
+ td span.important{
+  text-decoration: underline;
+ }
