@@ -1,10 +1,11 @@
-.topic, .breadcrumb, .comments {
-  width: 90%;
-  margin: auto;
+.topic, .breadcrumb, .comments, nav, .add_comment_form {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .topic {
   padding-top: 20px;
+  margin-bottom: 40px;
 }
 .topic_title {
   margin: 1px;

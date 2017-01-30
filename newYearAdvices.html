@@ -8,23 +8,27 @@
   <meta name="description" content="topic">
   <meta name="author" content="tagurkova">
 
+  <link rel="stylesheet" href="styles/content.css"/>
   <link rel="stylesheet" href="styles/top_menu.css"/>
   <link rel="stylesheet" href="styles/breadcrumb.css"/>
-  <link rel="stylesheet" href="styles/content.css"/>
+  <link rel="stylesheet" href="styles/comments.css"/>
+
   <style>
     body {
-      margin: 0px;
+      margin: 0px 0px 100px;
     }
   </style>
 </head>
 
 <body>
+  <div class="top_menu">
     <nav>
       <a href="#">Главная</a>
       <a href="#">Форум</a>
       <a href="#" id="active">Статьи</a>
       <a href="#">Контакты</a>
     </nav>
+  </div>
   <ul class="breadcrumb">
     <li><a href="#">Главная</a></li>
     <li><a href="#">Статьи</a></li>
@@ -57,6 +61,43 @@
     <div class="topic_sub">автор: <a href="#">Администратор</a> <span class="date">01.12.2016<span></div>
   </div>
   <div class="comments">
+    <div class="comments_amount">12 комментариев</div>
+    <div class="comment">
+      <div class="comment_header"><span class="user_info">Гришаня, 15 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+      <div class="comment_body">Аффтар жжот!</div>
+      <div class="comment_actions" class="reply"><a href="#">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+      <div class="comment">
+        <div class="comment_header"><span class="user_info">Владимир, 30 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+        <div class="comment_body">Школоло детектед!</div>
+        <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+        <div class="comment">
+          <div class="comment_header"><span class="user_info">Татьяна, 32 года <span class='user_sex'>(Ж)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
+          <div class="comment_body">С точки зрения банальной эрудиции, каждый здравомыслящий индивидуум, теоретически модифицирующий научную абстракцию, не может игнорировать тенденцию парадоксальных иллюзий</div>
+          <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="comment_header"><span class="user_info">Кузнечик, 99 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+        <div class="comment_body">Азаза!<br>Лови пацана!</div>
+        <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="comment_header"><span class="user_info">Жека, 30 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+      <div class="comment_body">Первый!</div>
+      <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+    </div>
+    <div class="comment">
+      <div class="comment_header"><span class="user_info">d87aef015, 18 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
+      <div class="comment_body">Автоматические коробки передач, кожанные чехлы, аксессуары <ссылка удалена><br/>Корпаративы, юбилеи, дни рождения, праздники, утренники. Дешево и качественно <ссылка удалена></div>
+      <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+    </div>
+  </div>
+  <div class="add_comment_form">
+    <p class="form_header">Оставить свой комментарий</p>
+    <form>
+      <p>Имя:*</p><input name="userName"></input>
+    </form>
   </div>
 </body>
 </html>

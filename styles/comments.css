@@ -1,0 +1,38 @@
+.comments {
+  border-bottom: 1px solid black;
+}
+.comments_amount {
+  border-bottom: 1px dotted black;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: grey;
+}
+.comment {
+  width: 405px;
+}
+.comment div.comment {
+  border-left: 1px dotted black;
+  padding-left: 30px;
+}
+.comment_header, .comment_actions{
+  padding: 12px 0px;
+}
+.user_info {
+  font-weight: bold;
+}
+.user_info .user_sex {
+  font-weight: normal;
+}
+.comment_info {
+  margin-left: 20px;
+}
+.comment_info .comment_info_date {
+  color: grey;
+  font-weight: bold;
+}
+.comment_actions .reply {
+}
+.comment_actions .report {
+  float: right;
+  color: #714949;
+}
