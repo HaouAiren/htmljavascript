@@ -3,6 +3,9 @@
   margin: auto;
 }
 
+.topic {
+  padding-top: 20px;
+}
 .topic_title {
   margin: 1px;
   color: grey;

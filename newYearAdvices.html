@@ -11,16 +11,20 @@
   <link rel="stylesheet" href="styles/top_menu.css"/>
   <link rel="stylesheet" href="styles/breadcrumb.css"/>
   <link rel="stylesheet" href="styles/content.css"/>
-  
+  <style>
+    body {
+      margin: 0px;
+    }
+  </style>
 </head>
 
 <body>
-  <menu>
-    <li>Главная</li>
-    <li>Форум</li>
-    <li>Статьи</li>
-    <li>Контакты</li>
-  </menu>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">Форум</a>
+      <a href="#" id="active">Статьи</a>
+      <a href="#">Контакты</a>
+    </nav>
   <ul class="breadcrumb">
     <li><a href="#">Главная</a></li>
     <li><a href="#">Статьи</a></li>
@@ -51,6 +55,8 @@
       </table>
     </div>
     <div class="topic_sub">автор: <a href="#">Администратор</a> <span class="date">01.12.2016<span></div>
+  </div>
+  <div class="comments">
   </div>
 </body>
 </html>

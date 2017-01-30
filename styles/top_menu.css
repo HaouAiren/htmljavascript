@@ -1,0 +1,25 @@
+nav {
+  background-color: #3878B6;
+  height: 45px;
+  margin-bottom: 10px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-family: calibri;
+  line-height: 46px;
+
+}
+nav a:first-child{
+  padding-left: 4em;
+}
+nav a#active {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+nav a:hover {
+  color: black;
+}
