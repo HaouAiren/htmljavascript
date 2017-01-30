@@ -1,0 +1,32 @@
+.breadcrumb {
+  list-style: none;
+  overflow: hidden;
+  -webkit-padding-start: 0px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.breadcrumb li {
+  float: left;
+}
+.breadcrumb li a {
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  display: block;
+  float: left;
+}
+.breadcrumb li::after {
+  content: ">";
+}
+.breadcrumb li:first-child a {
+  padding-left: 0px;
+}
+.breadcrumb li:last-child::after {
+  content: "";
+}
+.breadcrumb li:last-child a {
+  margin-left:10px;
+  color: black;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}

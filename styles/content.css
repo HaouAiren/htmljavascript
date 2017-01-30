@@ -1,40 +1,40 @@
-.topic{
+.topic, .breadcrumb, .comments {
   width: 90%;
   margin: auto;
 }
 
-.topic_title{
+.topic_title {
   margin: 1px;
   color: grey;
 }
-.topic_introduction{
+.topic_introduction {
   font-weight: bold;
 }
-.topic_subtitle{
+.topic_subtitle {
   margin: 3px;
   margin-top: 12px;
 }
-.topic_body{
+.topic_body {
   border: 1px solid #9A9A9A;
   padding: 1em;
 }
-.topic_sub{
+.topic_sub {
   font-style: italic;
   float: right;
   width: 300px;
   text-align: right;
 }
 
-.date{
+.date {
   padding-left: 10%;
   font-weight: bold;
 }
 
-img{
+img {
   float: left;
 }
 
-.no_float{
+.no_float {
   clear: left;
 }
 
@@ -50,12 +50,12 @@ td, th {
   text-align: left;
  }
 
- td.section{
+ td.section {
    text-align: right;
    font-weight: bold;
    vertical-align: top;
  }
 
- td span.important{
+ td span.important {
   text-decoration: underline;
  }
