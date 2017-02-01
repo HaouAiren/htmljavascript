@@ -17,6 +17,20 @@
 .user_info {
   font-weight: bold;
 }
+/*Обратить внимание на именование*/
+.user-info {
+
+}
+.user-info-sex {
+
+}
+.user-info-name {
+
+}
+[class|="user-info"] {
+
+}
+
 .user_info .user_sex {
   font-weight: normal;
 }

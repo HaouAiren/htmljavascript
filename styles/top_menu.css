@@ -15,12 +15,10 @@ nav a {
   display: inline-block;
   float:left;
 }
-nav a#active {
+nav a#active, nav a:hover {
   color: black;
   background-color: white;
-  font-weight: bold;
 }
-nav a:hover {
-  color: black;
-  background-color: white;
+nav a#active {
+  font-weight: bold;
 }

@@ -89,7 +89,7 @@
     </div>
     <div class="comment">
       <div class="comment_header"><span class="user_info">d87aef015, 18 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
-      <div class="comment_body">Автоматические коробки передач, кожанные чехлы, аксессуары <ссылка удалена><br/>Корпаративы, юбилеи, дни рождения, праздники, утренники. Дешево и качественно <ссылка удалена></div>
+      <div class="comment_body">Автоматические&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; коробки               передач, кожанные чехлы, аксессуары &lt;ссылка удалена&gt;<br/>Корпаративы, юбилеи, дни рождения, праздники, утренники. Дешево и качественно &lt;ссылка удалена&gt; </div>
       <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
     </div>
     <hr>
@@ -98,23 +98,27 @@
     <div class="add_comment_form">
       <h3 class="form_header">Оставить свой комментарий</h3>
       <form>
-        <label class="required_field">Имя:</label>
-        <input name="name" id="txb_name" type="text" required="true"/>
+        <div>
+          <label class="required_field">Имя:</label>
+          <input name="name" id="txb_name" type="text" required="true"/>
+        </div>
 
-        <label class="non_required_field">Возраст:</label>
-        <input name="age" id="txb_age" type="text"/>
+        <div>
+          <label class="non_required_field">Возраст:</label>
+          <input name="age" id="txb_age" type="text"/>
 
-        <label class="non_required_field">Пол:</label>
-        <select id="pklt_sex">
-          <option value=""></option>
-          <option value="?">Не определился</option>
-          <option value="М">Мужской</option>
-          <option value="Ж">Женский</option>
-        </select>
+          <label class="non_required_field">Пол:</label>
+          <select id="pklt_sex">
+            <option value=""></option>
+            <option value="?">Не определился</option>
+            <option value="М">Мужской</option>
+            <option value="Ж">Женский</option>
+          </select>
+        </div>
 
         <div>
           <label class="required_field" style="vertical-align: top;">Текст:</label>
-          <textarea name="message" id="txb_message" required="true" placeholder="Написать комментарий"></textarea>
+          <textarea name="message" id="txb_message" required="true" placeholder="Написать комментарий" rows="5"></textarea>
         </div>
         <label for="chb_rules" class="rules">
           <input type="checkbox" id="chb_rules" required="true"/>Я согласен с <a href="#">условиями</a> размещения комментариев
