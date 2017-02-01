@@ -1,3 +1,72 @@
 .add_comment_form {
-  width: 405px;
+  width: 375px;
+}
+.add_comment_form .form_header {
+  color: grey;
+}
+.add_comment_form .required_field, .non_required_field{
+  font-size: 18px;
+  font-weight: bold;
+  width: 70px;
+  margin: 5px;
+  display: inline-block;
+  text-align: right;
+}
+
+.add_comment_form .required_field::after {
+  content: "*";
+  color: #B01B1D;
+
+}
+
+.add_comment_form input {
+  display: inline-block;
+  margin: 7px 0px;
+  height: 23px;
+}
+
+.add_comment_form select {
+  display: inline-block;
+  margin: 7px 0px;
+  height: 27px;
+}
+
+.add_comment_form #btn_send {
+  height: 27px;
+  background-color: white;
+  width: 100px;
+  margin-left: 70%;
+}
+
+.add_comment_form .rules {
+  display: inline-block;
+  margin: 7px 0px;
+}
+
+.add_comment_form .rules input {
+  display: inline-block;
+  height: auto;
+  margin: 0px 5px;
+}
+
+.add_comment_form #txb_name, #txb_age, #pklt_sex, #txb_message, #chb_rules, #btn_send{
+  border-radius: 3px;
+  border: 1px solid #CDCDCD;
+}
+
+.add_comment_form #txb_name {
+  width: 275px;
+}
+.add_comment_form #txb_age {
+  width: 80px;
+}
+.add_comment_form #pklt_sex {
+  width: 107px;
+}
+.add_comment_form #txb_message {
+  width: 272px;
+  resize: vertical;
+  height: 100px;
+  margin: 7px 0px;
+
 }

@@ -1,4 +1,4 @@
-.topic, .breadcrumb, .comments, nav, .add_comment_form {
+.topic, .breadcrumb, .comments, nav, .add_comment{
   width: 1000px;
   margin: 0 auto;
 }
