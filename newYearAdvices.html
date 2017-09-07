@@ -8,14 +8,19 @@
   <meta name="description" content="topic">
   <meta name="author" content="tagurkova">
 
+  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/CommentForm.js"></script>
+
   <link rel="stylesheet" href="styles/content.css"/>
   <link rel="stylesheet" href="styles/top_menu.css"/>
   <link rel="stylesheet" href="styles/breadcrumb.css"/>
   <link rel="stylesheet" href="styles/comments.css"/>
   <link rel="stylesheet" href="styles/add_comment_form.css"/>
+  <link rel="stylesheet" href="styles/messages.css"/>
   <style>
     body {
-      margin: 0px 0px 100px;
+      margin: 0 0 100px;
     }
   </style>
 </head>
@@ -58,73 +63,86 @@
         </tr>
       </table>
     </div>
-    <div class="topic_sub">автор: <a href="#">Администратор</a> <span class="date">01.12.2016<span></div>
+    <div class="topic_sub">автор: <a href="#">Администратор</a> <span class="date">01.12.2016</span></div>
   </article>
   <section class="comments">
-    <div class="comments_amount">12 комментариев</div>
+    <div class="comments_amount_section"><span class="comments_amount">6</span> комментариев</div>
+    <div class="comment comment-template">
+      <div class="comment_header"><span class="user_info"><span class="user_name"></span><span class="user_age"></span><span class='user_gender'></span></span><span class="comment_info">отправлено <span class="comment_info_date"></span></span></div>
+      <div class="comment_body"></div>
+      <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+    </div>
     <div class="comment">
-      <div class="comment_header"><span class="user_info">Гришаня, 15 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+      <div class="comment_header"><span class="user_info">Гришаня, 15 лет <span class='user_gender'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
       <div class="comment_body">Аффтар жжот!</div>
-      <div class="comment_actions" class="reply"><a href="#">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
+      <div class="comment_actions" ><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
       <div class="comment">
-        <div class="comment_header"><span class="user_info">Владимир, 30 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+        <div class="comment_header"><span class="user_info">Владимир, 30 лет <span class='user_gender'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
         <div class="comment_body">Школоло детектед!</div>
         <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
         <div class="comment">
-          <div class="comment_header"><span class="user_info">Татьяна, 32 года <span class='user_sex'>(Ж)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
+          <div class="comment_header"><span class="user_info">Татьяна, 32 года <span class='user_gender'>(Ж)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
           <div class="comment_body">С точки зрения банальной эрудиции, каждый здравомыслящий индивидуум, теоретически модифицирующий научную абстракцию, не может игнорировать тенденцию парадоксальных иллюзий</div>
           <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
         </div>
       </div>
       <div class="comment">
-        <div class="comment_header"><span class="user_info">Кузнечик, 99 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+        <div class="comment_header"><span class="user_info">Кузнечик, 99 лет <span class='user_gender'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
         <div class="comment_body">Азаза!<br>Лови пацана!</div>
         <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
       </div>
     </div>
     <div class="comment">
-      <div class="comment_header"><span class="user_info">Жека, 30 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
+      <div class="comment_header"><span class="user_info">Жека, 30 лет <span class='user_gender'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">02.12.2016</span></span></div>
       <div class="comment_body">Первый!</div>
       <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
     </div>
     <div class="comment">
-      <div class="comment_header"><span class="user_info">d87aef015, 18 лет <span class='user_sex'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
-      <div class="comment_body">Автоматические&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; коробки               передач, кожанные чехлы, аксессуары &lt;ссылка удалена&gt;<br/>Корпаративы, юбилеи, дни рождения, праздники, утренники. Дешево и качественно &lt;ссылка удалена&gt; </div>
+      <div class="comment_header"><span class="user_info">d87aef015, 18 лет <span class='user_gender'>(М)</span></span><span class="comment_info">отправлено <span class="comment_info_date">03.12.2016</span></span></div>
+      <div class="comment_body">Автоматические коробки передач, кожанные чехлы, аксессуары &lt;ссылка удалена&gt;<br/>Корпаративы, юбилеи, дни рождения, праздники, утренники. Дешево и качественно &lt;ссылка удалена&gt; </div>
       <div class="comment_actions"><a href="#" class="reply">Ответить</a><a href="#" class="report">Пожаловаться</a></div>
     </div>
-    <hr>
   </section>
-  <section class="add_comment">
-    <div class="add_comment_form">
-      <h3 class="form_header">Оставить свой комментарий</h3>
+
+  <section class="add-comment">
+    <hr>
+    <div class="main-form add-comment-form">
+      <h3 class="form-header">Оставить свой комментарий</h3>
       <form>
         <div>
-          <label class="required_field">Имя:</label>
-          <input name="name" id="txb_name" type="text" required="true"/>
+          <label class="required-field-label"><span>Имя: </span><input name="name" class="txb-name" type="text" required/></label>
+          <div class="error">
+            Поле "Имя" обязательно для заполнения
+          </div>
         </div>
 
         <div>
-          <label class="non_required_field">Возраст:</label>
-          <input name="age" id="txb_age" type="text"/>
+          <label class="non-required-field-label"><span>Возраст: </span><input name="age" class="txb-age" type="text"/></label>
 
-          <label class="non_required_field">Пол:</label>
-          <select id="pklt_sex">
-            <option value=""></option>
-            <option value="?">Не определился</option>
-            <option value="М">Мужской</option>
-            <option value="Ж">Женский</option>
-          </select>
+          <label class="non-required-field-label"><span>Пол: </span>
+            <select class="pklt-gender" name="gender">
+              <option value=""></option>
+              <option value="?">Не определился</option>
+              <option value="М">Мужской</option>
+              <option value="Ж">Женский</option>
+            </select>
+          </label>
         </div>
 
         <div>
-          <label class="required_field" style="vertical-align: top;">Текст:</label>
-          <textarea name="message" id="txb_message" required="true" placeholder="Написать комментарий" rows="5"></textarea>
+          <label  class="required-field-label"><span style="vertical-align: top;">Текст: </span><textarea name="message" class="txb-message" required placeholder="Написать комментарий" rows="5"></textarea></label>
+          <div class="error">
+            Поле "Текст" обязательно для заполнения
+          </div>
         </div>
-        <label for="chb_rules" class="rules">
-          <input type="checkbox" id="chb_rules" required="true"/>Я согласен с <a href="#">условиями</a> размещения комментариев
-        </label>
 
-        <input type="submit" value="Отправить" id="btn_send"/>
+        <div class="rules">
+          <label><input type="checkbox" class="chb-rules" name="posting-rules"/>Я согласен с <a href="#">условиями</a> размещения комментариев</label>
+        </div>
+
+        <input type="button" value="Отмена" class="btn-cancel"/>
+        <input type="button" value="Отправить" class="btn-send" disabled/>
+
       </form>
     </div>
   </section>

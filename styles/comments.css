@@ -1,4 +1,4 @@
-.comments_amount {
+.comments_amount_section {
   border-bottom: 1px dotted black;
   margin-bottom: 15px;
   font-weight: bold;
@@ -7,12 +7,17 @@
 .comment {
   width: 405px;
 }
+
+.comment-template {
+  display: none;
+}
+
 .comment div.comment {
   border-left: 1px dotted black;
   padding-left: 30px;
 }
 .comment_header, .comment_actions{
-  padding: 12px 0px;
+  padding: 12px 0;
 }
 .user_info {
   font-weight: bold;
@@ -31,7 +36,7 @@
 
 }
 
-.user_info .user_sex {
+.user_info .user_gender {
   font-weight: normal;
 }
 .comment_info {

@@ -1,11 +1,11 @@
-.add_comment_form {
+.add-comment-form {
   width: 375px;
 }
-.add_comment_form .form_header {
+.add-comment-form .form-header {
   color: grey;
 }
 /*После запятой перечислять все с нуля, как будто до этого ничего не было написано*/
-.add_comment_form .required_field, .add_comment_form .non_required_field{
+.required-field-label span, .non-required-field-label span{
   font-size: 18px;
   font-weight: bold;
   width: 70px;
@@ -14,61 +14,63 @@
   text-align: right;
 }
 
-.add_comment_form .required_field::after {
+.required-field-label span::after {
   content: "*";
   color: #B01B1D;
-
 }
 
-.add_comment_form input {
+.add-comment-form input {
   display: inline-block;
-  margin: 7px 0px;
+  margin: 7px 0;
   height: 23px;
 }
 
-.add_comment_form select {
+.add-comment-form select {
   display: inline-block;
-  margin: 7px 0px;
+  margin: 7px 0;
   height: 27px;
 }
 
-/*id единственный на странице, ему не нужна какая-то область видимости*/
-#btn_send {
+input.btn-send, input.btn-cancel {
   height: 27px;
   background-color: white;
   width: 100px;
   margin-left: 70%;
 }
-
-.add_comment_form .rules {
-  display: inline-block;
-  margin: 7px 0px;
+input.btn-cancel {
+  margin-left: 40%;
+  display: none;
 }
 
-.add_comment_form .rules input {
+.add-comment-form .rules {
+  display: inline-block;
+  margin: 7px 0;
+}
+
+.add-comment-form .rules input {
   display: inline-block;
   height: auto;
-  margin: 0px 5px;
+  margin: 0 5px;
 }
 
-#txb_name, #txb_age, #pklt_sex, #txb_message, #chb_rules, #btn_send{
+.txb-name, .txb-age, .pklt-gender, .txb-message, .chb-rules, .btn-send, .btn-cancel{
   border-radius: 3px;
   border: 1px solid #CDCDCD;
 }
 
-#txb_name {
+.txb-name {
   width: 275px;
 }
-#txb_age {
+.txb-age {
   width: 80px;
 }
-#pklt_sex {
+.pklt-gender {
   width: 107px;
 }
-#txb_message {
+.txb-message {
   width: 272px;
   resize: vertical;
   height: 100px;
-  margin: 7px 0px;
-
+  margin: 7px 0;
+  white-space: pre-wrap;
 }
